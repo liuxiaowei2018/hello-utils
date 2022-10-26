@@ -1,4 +1,4 @@
-package com.open.java.util.stream.example;
+package com.open.java.util.stream.cases;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;

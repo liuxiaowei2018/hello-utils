@@ -3,6 +3,7 @@ package com.open.java.util.stream.example;
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.json.JSONObject;
 import cn.hutool.json.JSONUtil;
+import com.open.java.util.stream.cases.PermissionDTO;
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.File;
@@ -16,7 +17,7 @@ import java.util.stream.Collectors;
  * @Description 处理权限数据-递归算法
  */
 @Slf4j
-public class RegressionTest {
+public class PermissionTest {
 
     public static void main(String[] args) {
         String tempPath = "D:/permission.json";
