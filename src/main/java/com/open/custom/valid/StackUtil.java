@@ -1,4 +1,4 @@
-package com.open.custom;
+package com.open.custom.valid;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
  * @Description 异常信息工具类
  */
 @Slf4j
-public class ThrowableUtil {
+public class StackUtil {
 
     private static final int DEFAULT_LINE_NUMBER = 10;
 
@@ -181,7 +181,7 @@ public class ThrowableUtil {
             int ex = 1 / 0;
         } catch(Exception e) {
             e.printStackTrace();
-            String errorMessage = ThrowableUtil.getLastStackTrace(e, 10);
+            String errorMessage = StackUtil.getLastStackTrace(e, 10);
             log.info(errorMessage);
             // 这里可以将errorMessage返回给前端
         }
